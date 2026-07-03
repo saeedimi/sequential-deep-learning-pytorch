@@ -6,7 +6,8 @@ A collection of practical **Natural Language Processing (NLP)** projects impleme
 
 # 🚀 Repository Overview
 
-This repository contains practical NLP projects built with **PyTorch**, covering distributed word representations, sequence modeling, sentiment analysis, text generation, and text classification using modern deep learning techniques.
+This repository contains practical Natural Language Processing projects implemented in **PyTorch**, covering distributed word representations, sentiment analysis, recurrent neural networks, generative language modeling, and transfer learning for text classification.
+
 
 <p align="center">
   <img src="Images/RNN_LSTM.jpg" width="750">
@@ -26,8 +27,8 @@ This repository contains practical NLP projects built with **PyTorch**, covering
 - Text Generation
 - Sequence Modeling
 - TorchText
-- GPU-ready PyTorch implementations
 - Well-documented notebooks suitable for learning and experimentation
+- Transfer Learning
 
 ---
 
@@ -49,6 +50,7 @@ This repository contains practical NLP projects built with **PyTorch**, covering
 - Variable-Length Sequences
 - TorchText
 - Deep Learning with PyTorch
+- Transfer Learning
 
 ---
 
@@ -129,7 +131,12 @@ This notebook extends recurrent neural networks to character-level language mode
 - Token sampling
 - Hidden state propagation
 - Sequence generation
-- GPU training
+- Autoregressive generation
+- Temperature-based sampling
+- Teacher forcing
+- Hidden state propagation
+- Character embeddings
+- Sequence modeling
 - PyTorch implementation
 
 ### Notebook
@@ -142,17 +149,19 @@ This notebook extends recurrent neural networks to character-level language mode
 
 ### Overview
 
-This notebook presents an end-to-end NLP project for SMS spam detection using Long Short-Term Memory (LSTM) networks. It covers text preprocessing, tokenization, TorchText pipelines, batching strategies, recurrent neural network training, and evaluation on a real-world text classification task.
+This notebook presents two deep learning approaches for SMS spam detection using PyTorch. The first implements a Long Short-Term Memory (LSTM) network for sequence classification, while the second applies transfer learning with a pretrained ULMFiT language model. Together, these approaches demonstrate both training recurrent neural networks from scratch and adapting pretrained language models for text classification.
 
 ### Topics Covered
 
 - SMS spam detection
 - Long Short-Term Memory (LSTM)
+- ULMFiT transfer learning
 - Text preprocessing
-- TorchText
+- Tokenization
 - Word embeddings
 - Sequence classification
-- Model training and evaluation
+- Language model fine-tuning
+- Model evaluation
 - Deep learning with PyTorch
 
 ### Notebook
@@ -212,7 +221,7 @@ Open the notebooks in numerical order:
 
 # ⭐ About
 
-This repository showcases practical Natural Language Processing projects implemented with PyTorch. Beginning with **word embeddings and recurrent neural networks for sentiment analysis**, it progresses to **character-level language modeling and text generation**, and concludes with a complete **LSTM-based SMS spam detection project**. The notebooks have been reorganized and modernized to improve readability, reproducibility, and compatibility with recent versions of PyTorch and Python.
+This repository showcases practical Natural Language Processing projects developed with **PyTorch**, progressing from distributed word representations and recurrent neural networks to generative language modeling and transfer learning for text classification. The notebooks have been reorganized, modernized, and documented to improve readability, reproducibility, and compatibility with recent versions of PyTorch and Python.
 
 ---
 
