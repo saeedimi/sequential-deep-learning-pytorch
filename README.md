@@ -151,6 +151,13 @@ This notebook extends recurrent neural networks to character-level language mode
 
 This notebook presents two deep learning approaches for SMS spam detection using PyTorch. The first implements a Long Short-Term Memory (LSTM) network for sequence classification, while the second applies transfer learning with a pretrained ULMFiT language model. Together, these approaches demonstrate both training recurrent neural networks from scratch and adapting pretrained language models for text classification.
 
+
+<p align="center">
+  <img src="Images/Spam.jpg" width="850">
+</p>
+
+
+
 ### Topics Covered
 
 - SMS spam detection
