@@ -1,12 +1,12 @@
 # Natural Language Processing with PyTorch
 
-A collection of practical **Natural Language Processing (NLP)** projects implemented using **PyTorch**. This repository explores recurrent neural networks, language modeling, text generation, and sequence classification through hands-on implementations of RNNs, LSTMs, and generative language models. Each notebook has been reorganized, documented, and expanded to demonstrate practical deep learning workflows for NLP.
+A collection of practical **Natural Language Processing (NLP)** projects implemented using **PyTorch**. This repository explores word embeddings, recurrent neural networks, language modeling, text generation, and sequence classification through hands-on implementations of Word2Vec, GloVe, RNNs, LSTMs, and generative language models. Each notebook has been reorganized, documented, and expanded to demonstrate practical deep learning workflows for NLP.
 
 ---
 
 # 🚀 Repository Overview
 
-This repository contains practical NLP projects built with **PyTorch**, covering recurrent neural networks, sequence modeling, text generation, and text classification using modern deep learning techniques.
+This repository contains practical NLP projects built with **PyTorch**, covering distributed word representations, sequence modeling, sentiment analysis, text generation, and text classification using modern deep learning techniques.
 
 <p align="center">
   <img src="Images/RNN_LSTM.jpg" width="750">
@@ -16,13 +16,15 @@ This repository contains practical NLP projects built with **PyTorch**, covering
 
 # ✨ Project Highlights
 
+- Word Embeddings (Word2Vec & GloVe)
+- Semantic Similarity & Word Analogies
+- Bias in Word Embeddings
 - Recurrent Neural Networks (RNNs)
 - Long Short-Term Memory (LSTM) Networks
-- Text Classification
+- Sentiment Analysis
 - Character-Level Language Modeling
 - Text Generation
 - Sequence Modeling
-- Word Embeddings
 - TorchText
 - GPU-ready PyTorch implementations
 - Well-documented notebooks suitable for learning and experimentation
@@ -32,14 +34,18 @@ This repository contains practical NLP projects built with **PyTorch**, covering
 # 📚 Topics Covered
 
 - Natural Language Processing (NLP)
+- Word Embeddings (Word2Vec & GloVe)
+- Semantic Similarity
+- Word Analogies
+- Bias in Word Embeddings
 - Recurrent Neural Networks (RNNs)
 - Long Short-Term Memory (LSTMs)
 - Sequence Modeling
 - Character-Level Language Models
 - Text Generation
+- Sentiment Analysis
 - Text Classification
 - Teacher Forcing
-- Word Embeddings (GloVe)
 - Variable-Length Sequences
 - TorchText
 - Deep Learning with PyTorch
@@ -68,7 +74,7 @@ natural-language-processing-pytorch/
 ├── .gitignore
 │
 ├── notebooks/
-│   ├── 01_recurrent_neural_networks.ipynb
+│   ├── 01_word-embeddings-and-rnn.ipynb
 │   ├── 02_generative_rnn.ipynb
 │   └── 03_spam_detection_lstm.ipynb
 │
@@ -82,25 +88,29 @@ natural-language-processing-pytorch/
 
 # 📖 Notebooks
 
-## Notebook 1 — Recurrent Neural Networks for Text Classification
+## Notebook 1 — Word Embeddings and Recurrent Neural Networks
 
 ### Overview
 
-This notebook introduces recurrent neural networks for natural language processing using PyTorch. It explains how RNNs process variable-length text sequences, incorporates pre-trained GloVe word embeddings, and demonstrates text classification using recurrent architectures.
+This notebook introduces the foundations of Natural Language Processing using distributed word representations and recurrent neural networks. It begins by exploring **Word2Vec** and **GloVe** embeddings to understand semantic relationships between words, including similarity, analogies, and embedding bias. It then builds an end-to-end sentiment analysis pipeline by combining pretrained word embeddings with a recurrent neural network for tweet classification.
 
 ### Topics Covered
 
+- Word2Vec
+- GloVe embeddings
+- Cosine similarity
+- Semantic similarity
+- Word analogies
+- Bias in word embeddings
+- Sentiment analysis
 - Recurrent Neural Networks (RNNs)
-- Text classification
 - Variable-length sequences
-- Sequence batching
-- Hidden states
-- GloVe word embeddings
+- Tweet sentiment classification
 - PyTorch implementation
 
 ### Notebook
 
-`notebooks/01_recurrent_neural_networks.ipynb`
+`notebooks/01_word-embeddings-and-rnn.ipynb`
 
 ---
 
@@ -118,6 +128,7 @@ This notebook extends recurrent neural networks to character-level language mode
 - Teacher forcing
 - Token sampling
 - Hidden state propagation
+- Sequence generation
 - GPU training
 - PyTorch implementation
 
@@ -127,7 +138,7 @@ This notebook extends recurrent neural networks to character-level language mode
 
 ---
 
-## Notebook 3 — Spam Detection with LSTM Networks
+## Notebook 3 — SMS Spam Detection with LSTM Networks
 
 ### Overview
 
@@ -141,7 +152,7 @@ This notebook presents an end-to-end NLP project for SMS spam detection using Lo
 - TorchText
 - Word embeddings
 - Sequence classification
-- Transfer learning concepts
+- Model training and evaluation
 - Deep learning with PyTorch
 
 ### Notebook
@@ -154,9 +165,11 @@ This notebook presents an end-to-end NLP project for SMS spam detection using Lo
 
 Throughout this repository, I explore how to:
 
-- Build recurrent neural networks for NLP tasks.
+- Learn distributed word representations using Word2Vec and GloVe embeddings.
+- Analyze semantic similarity and solve word analogy tasks.
+- Understand bias in pretrained word embeddings.
+- Build recurrent neural networks for NLP applications.
 - Process and batch variable-length text sequences.
-- Learn distributed word representations using embeddings.
 - Generate text using character-level recurrent neural networks.
 - Train LSTM models for text classification.
 - Develop complete NLP workflows using PyTorch.
@@ -191,15 +204,15 @@ jupyter notebook
 
 Open the notebooks in numerical order:
 
-1. Recurrent Neural Networks
+1. Word Embeddings and RNNs
 2. Generative RNNs
-3. Spam Detection with LSTM
+3. SMS Spam Detection with LSTMs
 
 ---
 
 # ⭐ About
 
-This repository showcases practical Natural Language Processing projects implemented with PyTorch. Beginning with recurrent neural networks for text classification, it progresses to generative language modeling and concludes with a complete LSTM-based spam detection project. The notebooks have been reorganized and modernized to improve readability, reproducibility, and compatibility with recent versions of PyTorch and Python.
+This repository showcases practical Natural Language Processing projects implemented with PyTorch. Beginning with **word embeddings and recurrent neural networks for sentiment analysis**, it progresses to **character-level language modeling and text generation**, and concludes with a complete **LSTM-based SMS spam detection project**. The notebooks have been reorganized and modernized to improve readability, reproducibility, and compatibility with recent versions of PyTorch and Python.
 
 ---
 
